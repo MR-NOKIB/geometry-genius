@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="container mx-auto bg-blue-100 mt-10 mb-6 p-4 rounded-lg">
+        <div class="flex justify-between items-center">
+            <div class="font-medium">
+                <h1 class="text-4xl text-black">Intractive</h1>
+                <h3 class="text-2xl text-gray-600">Geometry Genius</h3>
+            </div>
+            <div>
+                <button id="btn-blog" class="font-medium text-white bg-blue-500 hover:bg-blue-600 px-10 py-2 rounded-lg">Blog</button>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="container mx-auto">
+        <section class=" p-4">
+            <div class="grid grid-cols-4 gap-4">
+                <div id="random-color-tri" class="border p-5 rounded">
+                    <div>
+                        <img class="mx-auto mb-[49px]" src="images/triangle.png" alt="">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-2xl font-medium">Triangle</h3>
+                        <p class="mb-[29px]">Area(A) = 0.5 × b × h</p>
+                        <p class="mb-10">
+                            <input id="tri-input-one" class="bg-gray-100 me-2 rounded px-2 w-[95px] h-[32px]" type="text" placeholder="b"><span>cm</span>
+                            <input id="tri-input-two" class="bg-gray-100 me-2 rounded px-2 w-[95px] h-[32px]" type="text" placeholder="l"><span>cm</span>
+                        </p>
+                        <button id="tri-calculate-btn" class="font-medium text-white bg-blue-500 hover:bg-blue-600 px-10 py-2 rounded-lg w-1/2">Calculate</button>
+                    </div>
+                </div>
+                <div id="random-color-rec" class="border p-5 rounded">
+                    <div>
+                        <img class="mx-auto mb-[49px]" src="images/rectangle.png" alt="">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-2xl font-medium">Rectangle</h3>
+                        <p class="mb-[29px]">Area(A) = w × l</p>
+                        <p class="mb-10">
+                            <input id="rec-input-one" class="bg-gray-100 me-2 rounded px-2 w-[95px] h-[32px]" type="text" placeholder="w"><span>cm</span>
+                            <input id="rec-input-two" class="bg-gray-100 me-2 rounded px-2 w-[95px] h-[32px]" type="text" placeholder="l"><span>cm</span>
+                        </p>
+                        <button id="rec-calculate-btn" class="font-medium text-white bg-blue-500 hover:bg-blue-600 px-10 py-2 rounded-lg w-1/2">Calculate</button>
+                    </div>
+                </div>
+                <div id="random-color-per" class="border p-5 rounded">
+                    <div>
+                        <img class="mx-auto mb-[49px]" src="images/parallelogram.png" alt="">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-2xl font-medium">Parallelogram</h3>
+                        <p class="mb-[29px]">Area(A) = b × h</p>
+                        <p class="mb-10">
+                            <input id="para-input-one" class="bg-gray-100 me-2 rounded px-2 w-[95px] h-[32px]" type="text" placeholder="b"><span>cm</span>
+                            <input id="para-input-two" class="bg-gray-100 me-2 rounded px-2 w-[95px] h-[32px]" type="text" placeholder="h"><span>cm</span>
+                        </p>
+                        <button id="para-calculate-btn" class="font-medium text-white bg-blue-500 hover:bg-blue-600 px-10 py-2 rounded-lg w-1/2">Calculate</button>
+                    </div>
+                </div>
+
+                <div id="random-color-area" class="border h-5/6 text-center p-4">
+                    <h4 class="mb-6 text-xl font-medium underline">Area Calculation</h4>
+                    <div id="calculation-area" class="text-start p-2 text-md">
+                        
+                    </div>
+                </div>
+
+                <div id="random-color-rho" class="border p-5 rounded">
+                    <div>
+                        <img class="mx-auto mb-[49px]" src="images/rhombus.png" alt="">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-2xl font-medium">Rhombus</h3>
+                        <p class="mb-[29px]">Area(A) = 0.5 × d1 × d2</p>
+                        <p class="mb-10">
+                            <input id="rho-input-one" class="bg-gray-100 me-2 rounded px-2 w-[95px] h-[32px]" type="text" placeholder="d1"><span>cm</span>
+                            <input id="rho-input-two" class="bg-gray-100 me-2 rounded px-2 w-[95px] h-[32px]" type="text" placeholder="d2"><span>cm</span>
+                        </p>
+                        <button id="rho-claculate-btn" class="font-medium text-white bg-blue-500 hover:bg-blue-600 px-10 py-2 rounded-lg w-1/2">Calculate</button>
+                    </div>
+                </div>
+                <div id="random-color-pen" class="border p-5 rounded">
+                    <div>
+                        <img class="mx-auto mb-[49px]" src="images/pentagon.png" alt="">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-2xl font-medium">Pentagon</h3>
+                        <p class="mb-[29px]">Area(A) = 0.5 × p × b</p>
+                        <p class="mb-10">
+                            <input id="pent-input-one" class="bg-gray-100 me-2 rounded px-2 w-[95px] h-[32px]" type="text" placeholder="p"><span>cm</span>
+                            <input id="pent-input-two" class="bg-gray-100 me-2 rounded px-2 w-[95px] h-[32px]" type="text" placeholder="b"><span>cm</span>
+                        </p>
+                        <button id="pent-calculate-btn" class="font-medium text-white bg-blue-500 hover:bg-blue-600 px-10 py-2 rounded-lg w-1/2">Calculate</button>
+                    </div>
+                </div>
+                <div id="random-color-elli" class="border p-5 rounded random-color">
+                    <div>
+                        <img class="mx-auto mb-[49px]" src="images/ellipse.png" alt="">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-2xl font-medium">Ellipse</h3>
+                        <p class="mb-[29px]">Area(A) = πab</p>
+                        <p class="mb-10">
+                            <input id="elli-input-one" class="bg-gray-100 me-2 rounded px-2 w-[95px] h-[32px]" type="text" placeholder="a"><span>cm</span>
+                            <input id="elli-input-two" class="bg-gray-100 me-2 rounded px-2 w-[95px] h-[32px]" type="text" placeholder="b"><span>cm</span>
+                        </p>
+                        <button id="elli-calculate-ctn" class="font-medium text-white bg-blue-500 hover:bg-blue-600 px-10 py-2 rounded-lg w-1/2">Calculate</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="JS/common.js"></script>
+    <script src="JS/geometri.js"></script>
+</body>
+</html>
